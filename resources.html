@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bentham">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Times+New+Roman">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a id="top"></a>
+            <div class="topnav" id="myTopnav">
+                <div><img src="images/Logo_V1.png"></div>
+                <a href="index.html">Home</a>
+                <a href="podcast.html">Podcast</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Instructional Videos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="study_topics_hebrew.html">Hebrew</a>
+                        <a href="study_topics_greek.html">Greek</a>
+                    </div>
+                </div>
+                <a href="resources.html" class="active">Resources</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about_authors.html">Authors</a>
+                        <a href="about_book.html">Book</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <script src="JavaScript/myJavaScript.js"></script>
+            
+            
+            <div id="main"></div>
+        </nav>
+    </header>
+
+
+    <!-- Look at Gallery from Homebound Cocktails-->
+    <main>
+        <div class="button_container">
+            <button type="button" data-filter="all">All</button>
+            <button type="button" data-filter=".lexicon">Lexicon</button>
+            <button type="button" data-filter=".concordance">Concordance</button>
+            <button type="button" data-filter=".interlinear">Interlinear Bible</button>
+            <button type="button" data-filter=".dictionary">Dictionary</button>
+        </div>
+        
+        <div class="gallery">
+            <div class="basic_card interlinear concordance lexicon"> 
+                <h2><a href="https://biblehub.com/">Bible Hub</a></h2> 
+                <a href="https://biblehub.com/"><img src="images/biblehub.jpg" alt="Bible Hub"></a>
+            </div>
+
+            <div class="basic_card lexicon dictionary">
+                <h2><a href="https://lsj.gr/wiki/Main_Page">Liddel, Scott, Jones Ancient Greek Dictionaries (LSJ)</a></h2>
+                <a href="https://lsj.gr/wiki/Main_Page"><img src="images/lsj.jpg" alt="LSJ"></a>
+            </div>
+
+            <div class="basic_card concordance interlinear dictionary">
+                <h2><a href="https://www.stepbible.org/">Step Bible</a></h2>
+                <a href="https://www.stepbible.org/"><img src="images/stepbible.jpg" alt="Step Bible"></a>"
+            </div>
+        
+        <div class="button">
+            <a href="#top">Back to Top</a></li>
+        </div>
+    </main>
+
+    <footer>
+        <p>Content &copy; David Blaauw and Aubrey Annis 2025 <br>
+            Website design &copy; Erin Annis 2025 <br>
+            Graphic design &copy; Hannah Blaauw 2025</p>
+    </footer>
+</body>
+</html>
