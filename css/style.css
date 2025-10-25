@@ -292,6 +292,7 @@ main p {
   overflow-x: hidden;
   padding: 1em 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .sidenav a {
@@ -315,6 +316,23 @@ main p {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+.video_container {
+  display: grid;
+  grid-template-rows: auto auto;
+  justify-content: space-evenly;
+  padding: 1em;
+}
+
+.video_container iframe {
+  border: 4px solid #854520;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+hr {
+  border-top: solid #854520; 
 }
 
 /* Buttons modified from https://www.w3schools.com/howto/howto_css_next_prev.asp and 
