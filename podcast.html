@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bentham">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Times+New+Roman">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Podcast</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a id="top"></a>
+            <div class="topnav" id="myTopnav">
+                <div><img src="images/Logo_V1.png"></div>
+                <a href="index.html">Home</a>
+                <a href="podcast.html" class="active">Podcast</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Instructional Videos
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="study_topics_hebrew.html">Hebrew</a>
+                        <a href="study_topics_greek.html">Greek</a>
+                        <a href="step_bible.html">Step Bible</a>
+                        <a href="bible_hub.html">Bible Hub</a>
+                        <a href="tlg.html">TLG</a>
+                        <a href="blue_letter_bible.html">Blue Letter Bible</a>
+                        <a href="perseus_digital_library.html">Perseus Digital Library</a>
+                    </div>
+                </div>
+                <a href="resources.html">Resources</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="about_authors.html">Authors</a>
+                        <a href="about_book.html">Book</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <script src="JavaScript/myJavaScript.js"></script>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Podcast Name</h1>
+
+        <div class="podcast-episode">
+
+            <div class="card2">
+                <h2>Title Heading (e.g., Episode 1: Introduction to the Podcast)</h2>
+                <h4>Date of Episode</h4>
+                <div class="video_container">
+                    <audio controls>
+                        <source src="podcasts/episode1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <p>Description of Episode 1 goes here. This episode covers the basics of what to expect from the podcast.</p>
+            </div>
+
+            <div class="card2">
+                <h2>Episode 2: The Book</h2>
+                <h4>Date of Episode</h4>
+                <div class="video_container">
+                    <iframe src="https://www.loom.com/embed/260fdcd7600a4d41b10432d5772dbffd?sid=890a4a7b-657e-4468-99a2-1aa46f9a4204" 
+                    frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
+                <p>Description of Episode 2 goes here.</p>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <a href="#top">Back to Top</a></li>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Content &copy; David Blaauw and Aubrey Annis 2025 <br>
+            Website design &copy; Erin Annis 2025 <br>
+            Graphic design &copy; Hannah Blaauw 2025</p>
+    </footer>
+</body>
+</html>
