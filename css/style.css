@@ -246,10 +246,13 @@ p {
   margin-top: 2em;
   border-radius: 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.card2 p {
-  text-align: center;
+.card2 h4 {
+  padding: 0 0 1em 0;
 }
 
 .button_container {
@@ -342,11 +345,12 @@ p {
 }
 
 .video_container {
-  display: flex;
+  /*display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em;
+  padding: 1em;*/
+  padding: 0 5em 1em 5em;
 }
 
 .video_container iframe {
