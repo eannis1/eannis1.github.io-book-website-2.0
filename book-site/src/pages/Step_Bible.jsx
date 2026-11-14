@@ -3,6 +3,17 @@ import "./Step_Bible.css"
 import { useLayoutEffect } from "react";
 import { useCallback } from "react";
 
+const modules = import.meta.glob('../assets/step_bible/*.{png,jpg,jpeg,svg}',{
+    eager: true,
+    import: 'default',
+});
+const images = Object.fromEntries(
+    Object.entries(modules).map(([path, url]) => [
+        path.split('/').pop(),
+        url,
+    ])
+)
+
 function VideoEmbed({videoId, title}) {
     return (
         <iframe
@@ -17,7 +28,7 @@ function VideoEmbed({videoId, title}) {
 }
 
 const DESIGN_WIDTH = 800;
-const MIN_PANE = 240;
+const MIN_PANE = 300;
 
 export function SplitView({ steps, src, title, direction = 'row' }) {
     const [index, setIndex] = useState(0);
@@ -141,8 +152,8 @@ export function SplitView({ steps, src, title, direction = 'row' }) {
             <div className="split-preview" ref={previewRef}>
                 <iframe 
                     className="split-frame" 
-                    src={src} 
-                    title={title} 
+                    src={src}
+                    title={title}
                     style={frameStyle}
                 />
             </div>
@@ -154,13 +165,36 @@ const steps = [
     {
         title: "Introduction to Step Bible",
         content: (
-            <VideoEmbed videoId={"Y3Z9xHXo_7w"} title={"StepBible Introduction"} />
+            <>
+                <div className="step-text">
+                    <p>
+                        Our site has an embedded version of StepBible.
+                        This is so that you can read and learn side-by-side.
+                        
+                        Our embedded site automatically sets up the default settings but
+                        if you were to use the site normally, the settings may be different.
+
+                    </p>
+                    <p>
+                        If you were not using our site, you would have to make sure that the translation
+                        is set to ESV and then click the dialog box for the next step.
+                    </p>
+                </div>
+                <img src={images["step_bible_1.png"]} className="step-img" / >
+
+                {/* <VideoEmbed videoId={"Y3Z9xHXo_7w"} title={"StepBible Introduction"} /> */}
+            </>
         )
     },
     {
         title: "Greek Concordance - LSJ",
         content: (
-            <VideoEmbed videoId={"xk7ZtcMNJQo"} title={"Step Bible Greek Concordance"} />
+            <>
+                <div className="step-text">
+                </div>
+                <img src={images["step_bible_3.png"]} className="step-img" / >
+            {/* <VideoEmbed videoId={"xk7ZtcMNJQo"} title={"Step Bible Greek Concordance"} /> */}
+            </>
         )
     },
     {
